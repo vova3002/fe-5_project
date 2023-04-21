@@ -8,4 +8,7 @@
     &__name{
         @extend %subtitle-style;
     }
+    &__description{
+        @extend %subtext-style
+    }
 }

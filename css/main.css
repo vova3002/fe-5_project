@@ -1,4 +1,4 @@
-.subscribe__text, .video__text, .project__text, .standarts__description, .qualities__text {
+.subscribe__text, .video__text, .project__text, .services__description, .standarts__text, .qualities__text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.56;
@@ -11,6 +11,13 @@
   font-size: 18px;
   line-height: 1.22;
   color: #000000;
+}
+
+.footer__link, .qualities__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.57;
+  color: #999999;
 }
 
 body {
