@@ -5,4 +5,7 @@
     &__text{
         @extend %description-style;
     }
+    &__name{
+        @extend %subtitle-style;
+    }
 }

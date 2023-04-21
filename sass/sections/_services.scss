@@ -2,4 +2,7 @@
     &__title {
         @include section-title($accent-color);
     }
+    &__name{
+        @extend %subtitle-style;
+    }
 }
