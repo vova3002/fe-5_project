@@ -1,0 +1,8 @@
+.standarts {
+    &__title {
+        @include section-title();
+    }
+    &__description {
+        @extend %description-style;
+    }
+}

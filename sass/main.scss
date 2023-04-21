@@ -1,5 +1,14 @@
+@import "./utils/vars";
+@import "./utils/mixins";
+@import "./utils/placeholders";
 @import "./base/common";
 @import "./base/reset";
 @import "./components/header";
 @import"./sections/hero";
+@import"./sections/qualities";
+@import"./sections/standarts";
+@import"./sections/services";
+@import"./sections/project";
+@import"./sections/video";
+@import"./sections/subscribe";
 @import "./components/footer";

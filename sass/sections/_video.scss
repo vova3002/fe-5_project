@@ -1,0 +1,8 @@
+.video {
+    &__title {
+        @include section-title($accent-color);
+    }
+    &__text {
+        @extend %description-style;
+    }
+}
