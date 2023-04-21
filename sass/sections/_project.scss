@@ -2,7 +2,12 @@
     &__title {
         @include section-title();
     }
+
     &__text {
         @extend %description-style;
+    }
+
+    &__button {
+        @extend %button-style;
     }
 }

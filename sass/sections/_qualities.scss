@@ -1,14 +1,22 @@
-.qualities{
-    &__title{
+.qualities {
+    &__title {
         @include section-title();
     }
-    &__text{
+
+    &__text {
         @extend %description-style;
     }
-    &__name{
+
+    &__name {
         @extend %subtitle-style;
     }
-    &__description{
-        @extend %subtext-style
+
+    &__description {
+        @extend %subtext-style;
     }
+
+    &__button {
+        @extend %button-style;
+    }
+
 }

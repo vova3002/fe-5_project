@@ -1,19 +1,37 @@
-%description-style{
+%description-style {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.56;
-    text-align: center;    
+    text-align: center;
     color: $main-text-color;
 }
-%subtitle-style{
+
+%subtitle-style {
     font-weight: 600;
     font-size: 18px;
     line-height: 1.22;
     color: $subtitle;
 }
-%subtext-style{
+
+%subtext-style {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.57;
     color: $main-text-color;
+}
+
+%button-style {
+    background-color: $link-color;
+    color: $accent-color;
+    box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+    border-radius: 30px;
+    border: none;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    width: 200px;
+    height: 45px;
+
 }

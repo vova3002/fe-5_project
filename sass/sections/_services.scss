@@ -1,11 +1,17 @@
-.services{
+.services {
     &__title {
         @include section-title($accent-color);
     }
-    &__name{
+
+    &__name {
         @extend %subtitle-style;
     }
-    &__description{
-        @extend %description-style
+
+    &__description {
+        @extend %description-style;
+    }
+
+    &__button {
+        @extend %button-style;
     }
 }
