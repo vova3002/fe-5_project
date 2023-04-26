@@ -106,6 +106,10 @@ h3 {
   content: "";
 }
 
+.hero {
+  background-image: url(../../img/hero-desktop1x.jpg);
+  padding-top: 319px;
+}
 .hero__tagline {
   font-weight: 500;
   font-size: 16px;
