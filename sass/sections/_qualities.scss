@@ -19,4 +19,12 @@
         @extend %button-style;
     }
 
+    &__list {
+        @include grids-list(27px);
+    }
+
+    &__item {
+        @include grids-item(3, 27px);
+    }
+
 }

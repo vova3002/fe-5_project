@@ -5,4 +5,12 @@
     &__text {
         @extend %description-style;
     }
+
+    &__list {
+        @include grids-list(100px);
+    }
+
+    &__item {
+        @include grids-item(5, 100px);
+    }
 }

@@ -10,4 +10,8 @@
     &__button {
         @extend %button-style;
     }
+
+    &__list {
+        @include grids-list(30px);
+    }
 }

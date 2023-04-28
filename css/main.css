@@ -48,12 +48,12 @@ body {
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1155px) {
   .container {
-    width: 1155px;
+    max-width: 1155px;
   }
 }
 
@@ -131,6 +131,16 @@ h3 {
   text-align: center;
   color: #323232;
 }
+.qualities__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 27px;
+}
+.qualities__item {
+  flex-basis: calc((100% - 81px) / 3);
+}
+
 .standarts__title {
   font-weight: 700;
   font-size: 36px;
@@ -138,6 +148,16 @@ h3 {
   text-align: center;
   color: #323232;
 }
+.standarts__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+}
+.standarts__item {
+  flex-basis: calc((100% - 500px) / 5);
+}
+
 .services__title {
   font-weight: 700;
   font-size: 36px;
@@ -145,6 +165,16 @@ h3 {
   text-align: center;
   color: #FFFFFF;
 }
+.services__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.services__item {
+  flex-basis: calc((100% - 90px) / 3);
+}
+
 .project__title {
   font-weight: 700;
   font-size: 36px;
@@ -152,10 +182,23 @@ h3 {
   text-align: center;
   color: #323232;
 }
+.project__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
 .video__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.47;
   text-align: center;
   color: #FFFFFF;
+}
+.footer__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
 }/*# sourceMappingURL=main.css.map */

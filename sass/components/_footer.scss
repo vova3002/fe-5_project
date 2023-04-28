@@ -5,4 +5,7 @@
 &__link{
     @extend %subtext-style
 }
+&__list {
+    @include grids-list(40px);
+}
 }
