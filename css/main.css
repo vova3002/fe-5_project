@@ -57,6 +57,10 @@ body {
   }
 }
 
+img {
+  width: 100%;
+}
+
 a {
   text-decoration: none;
 }
@@ -188,6 +192,9 @@ h3 {
   justify-content: center;
   gap: 30px;
 }
+.project__item {
+  flex-basis: calc((100% - 120px) / 4);
+}
 
 .video__title {
   font-weight: 700;
@@ -201,4 +208,7 @@ h3 {
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
+}
+.footer__item {
+  flex-basis: calc((100% - 120px) / 4);
 }/*# sourceMappingURL=main.css.map */

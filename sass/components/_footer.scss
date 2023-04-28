@@ -1,11 +1,20 @@
 .footer {
-&__footer{
-    @extend %subtitle-style
-}
-&__link{
-    @extend %subtext-style
-}
-&__list {
-    @include grids-list(40px);
-}
+    &__footer {
+        @extend %subtitle-style
+    }
+
+    &__link {
+        @extend %subtext-style
+    }
+
+    &__list {
+        @include grids-list(40px);
+    }
+
+
+    &__item {
+        @include grids-item(4, 30px);
+
+    }
+
 }

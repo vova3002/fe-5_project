@@ -16,5 +16,10 @@ body {
     @media screen and (min-width:1155px) {
         max-width: 1155px;
     }
+
     outline: 1px solid red;
+}
+
+img {
+    width: 100%;
 }

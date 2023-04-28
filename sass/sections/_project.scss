@@ -14,4 +14,10 @@
     &__list {
         @include grids-list(30px);
     }
+
+    &__item {
+        @include grids-item(4, 30px);
+
+    }
+
 }
