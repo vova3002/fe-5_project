@@ -113,6 +113,7 @@ h3 {
 .hero {
   background-image: url(../../img/hero-desktop1x.jpg);
   padding-top: 319px;
+  padding-bottom: 355px;
 }
 .hero__tagline {
   font-weight: 500;
@@ -128,6 +129,13 @@ h3 {
   text-align: center;
   color: #FFFFFF;
 }
+.hero__button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
 .qualities__title {
   font-weight: 700;
   font-size: 36px;
