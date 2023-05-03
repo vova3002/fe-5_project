@@ -1,14 +1,15 @@
 .header{
-    background-color: black;
     padding-top: 40px;
     padding-bottom: 40px;
     border: 1px solid rgba(161, 161, 161, 0.5);
+    position: absolute;
+    width: 100%;
 }
 
 .header__list{
     display: flex;
     gap: 40px;
-    justify-content:right;   
+    justify-content: right;  
 }
 
 .header__link{

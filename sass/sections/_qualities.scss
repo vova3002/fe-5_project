@@ -1,10 +1,18 @@
 .qualities {
+    padding-top: 110px;
+    padding-bottom: 105px;
     &__title {
         @include section-title();
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 739px;
+        margin-bottom: 32px;
     }
 
     &__text {
         @extend %description-style;
+        max-width: 730px;
+        margin: 0 auto 70px;
     }
 
     &__name {
@@ -17,6 +25,8 @@
 
     &__button {
         @extend %button-style;
+        margin: 55px auto 0;
+        display: block  
     }
 
     &__list {
@@ -25,6 +35,47 @@
 
     &__item {
         @include grids-item(3, 27px);
+        display: flex;
     }
 
+    &__icon {
+        fill: #4985FF;
+    }
+
+    &__circle {
+        border: 1px solid #E0E0E0;
+        border-radius: 50%;
+        width: 110px;
+        height: 110px;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 17px;
+    }
+
+    &__circle-in {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #4985FF;
+        border-radius: 50%;
+        width: 90px;
+        height: 90px;
+    }
+
+    &__box {
+        padding-top: 46px;
+    }
+
+    // &__item::before {
+    //     background: no-repeat center url(../../img/project.svg#clip0_1_351);
+    //     content: "";
+    //     display: block;
+    //     position: absolute;
+    //     border: 1px solid #4985FF;
+    //     border-radius: 50%;
+    //     width: 90px;
+    //     height: 90px;
+    // }
 }

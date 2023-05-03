@@ -79,10 +79,11 @@ h3 {
 }
 
 .header {
-  background-color: black;
   padding-top: 40px;
   padding-bottom: 40px;
   border: 1px solid rgba(161, 161, 161, 0.5);
+  position: absolute;
+  width: 100%;
 }
 
 .header__list {
@@ -111,7 +112,7 @@ h3 {
 }
 
 .hero {
-  background-image: url(../../img/hero-desktop1x.jpg);
+  background: no-repeat url(../../img/hero-desktop1x.jpg);
   padding-top: 319px;
   padding-bottom: 355px;
 }
@@ -136,12 +137,28 @@ h3 {
   margin-top: 50px;
 }
 
+.qualities {
+  padding-top: 110px;
+  padding-bottom: 105px;
+}
 .qualities__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.47;
   text-align: center;
   color: #323232;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 739px;
+  margin-bottom: 32px;
+}
+.qualities__text {
+  max-width: 730px;
+  margin: 0 auto 70px;
+}
+.qualities__button {
+  margin: 55px auto 0;
+  display: block;
 }
 .qualities__list {
   display: flex;
@@ -151,6 +168,33 @@ h3 {
 }
 .qualities__item {
   flex-basis: calc((100% - 81px) / 3);
+  display: flex;
+}
+.qualities__icon {
+  fill: #4985FF;
+}
+.qualities__circle {
+  border: 1px solid #E0E0E0;
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 17px;
+}
+.qualities__circle-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #4985FF;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+}
+.qualities__box {
+  padding-top: 46px;
 }
 
 .standarts__title {
