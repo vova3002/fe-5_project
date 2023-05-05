@@ -30,11 +30,11 @@
     }
 
     &__list {
-        @include grids-list(27px);
+        @include grids-list($gap: 27px);
     }
 
     &__item {
-        @include grids-item(3, 27px);
+        @include grids-item($items: 3, $gap: 27px);
         display: flex;
     }
 
