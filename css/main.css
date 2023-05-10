@@ -311,18 +311,34 @@ h3 {
   border-radius: 10px;
 }
 
+.project {
+  padding-top: 100px;
+  padding-bottom: 145px;
+  background-color: #F6F6F8;
+}
 .project__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.47;
   text-align: center;
   color: #323232;
+  margin-bottom: 50px;
+}
+.project__text {
+  margin: 0 auto 64px;
+  max-width: 730px;
+}
+.project__button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .project__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
+  margin-bottom: 50px;
 }
 .project__item {
   width: calc((100% - 120px) / 4);

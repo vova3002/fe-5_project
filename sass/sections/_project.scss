@@ -1,18 +1,30 @@
 .project {
+     padding-top: 100px;
+     padding-bottom: 145px;
+     background-color: #F6F6F8;
+
     &__title {
         @include section-title();
+         margin-bottom: 50px
     }
 
     &__text {
         @extend %description-style;
+       margin: 0 auto 64px;
+        max-width: 730px;
+        
     }
 
     &__button {
         @extend %button-style;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     &__list {
         @include grids-list(30px);
+        margin-bottom: 50px;
     }
 
     &__item {
