@@ -1,8 +1,26 @@
 .video {
+    background: url("../../img/video-desktop@1x.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 70px;
     &__title {
         @include section-title($accent-color);
     }
     &__text {
         @extend %description-style;
+        color: $accent-color;
+        margin-top: 30px;
+    }
+    &__content{
+        margin: 70px auto 0;
+        width: 970px;
+        height: 430px;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+    }
+    &>.container{
+        border-bottom: 1px solid $border-color;
+        padding-bottom: 85px;
     }
 }
