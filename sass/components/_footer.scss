@@ -1,7 +1,20 @@
 .footer {
+    padding-top: 70px;
+    padding-bottom: 30px;
+    background: #F6F6F8;
+
     &__footer {
         @extend %subtitle-style
     }
+
+    &__contact:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    &__title {
+        margin-bottom: 35px;
+    }
+
 
     &__link {
         @extend %subtext-style
@@ -9,12 +22,29 @@
 
     &__list {
         @include grids-list(40px);
+        padding-bottom: 70px;
+        border-bottom: 1px solid #E0E0E0;
+    }
+
+    &__copy {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 21px;
+        text-align: center;
+        margin-top: 30px;
+
+        color: #999999;
     }
 
 
     &__item {
         @include grids-item(4, 30px);
 
+    }
+
+    &__icon {
+        fill: #999999;
+        ;
     }
 
 }
