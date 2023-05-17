@@ -1,5 +1,8 @@
 .hero {
     background: no-repeat url(../../img/hero-desktop1x.jpg);
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 319px;
     padding-bottom: 355px;
     &__tagline {

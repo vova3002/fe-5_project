@@ -1,22 +1,44 @@
 .header{
     padding-top: 40px;
     padding-bottom: 40px;
-    border: 1px solid rgba(161, 161, 161, 0.5);
+    border-bottom: 1px solid rgba(161, 161, 161, 0.5);
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+}
+.header__button{
+    @media screen and (min-width:768px) {
+        display: none;
+    }
+    background-color: rgba(246, 255, 0, 0.608);
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    border: none;
+    box-shadow: 3px 3px 6px 6px rgb(22, 204, 217);
+    margin-left: auto;
+    display: block;
+}
+.header__burger{   
+    width: 50px;
+    height: 50px;
 }
 
 .header__list{
     display: flex;
     gap: 40px;
     justify-content: right;  
+    @media screen and (max-width:767px) {
+        display: none;
+    }
 }
 
 .header__link{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.25;
-    color: #FFFFFF;
+    color: red;
     position: relative;
 }
 .header__active::before{
