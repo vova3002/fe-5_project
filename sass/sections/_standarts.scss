@@ -10,14 +10,24 @@
         color: $main-text-color;
     }
     &__img {
-        width: 500px;
-        height: 400px;
+        width: 400px;
+        height: 300px;
     }
     &__list {
         @include grids-list(100px);
-        border-top: 1px solid #E0E0E0;
-        padding-top: 70px;
-        margin-top: 90px;
+        @media screen and (min-width:320px) {
+            display: none;
+        }
+        @media screen and (min-width:768px) {
+            display: flex;
+            justify-content: left;
+            border-top: 1px solid #E0E0E0;
+            padding-top: 70px;
+            margin-top: 90px;
+        }
+        @media screen and (min-width:1200px) {
+            justify-content: center;
+        }
     }
     &__link {
         color: $link-color;
@@ -27,9 +37,13 @@
         @include grids-item(5, 100px);
     }
     &__box {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @media screen and (min-width:320px){
+            justify-content: space-between;
+            align-items: center;
+        }
+        @media screen and (min-width:768px) {
+            display: flex;
+        }
     }
     &__content {
         max-width: 489px;
