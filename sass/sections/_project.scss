@@ -1,35 +1,38 @@
 .project {
-     padding-top: 100px;
-     padding-bottom: 145px;
-     background-color: #F6F6F8;
+  padding-top: 100px;
+  padding-bottom: 145px;
+  background-color: #f6f6f8;
 
-    &__title {
-        @include section-title();
-         margin-bottom: 50px
+  &__title {
+    @include section-title();
+    margin-bottom: 50px;
+  }
+
+  &__text {
+    @extend %description-style;
+    margin: 0 auto 64px;
+    max-width: 730px;
+  }
+
+  &__button {
+    @extend %button-style;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__list {
+    @include grids-list(30px);
+    margin-bottom: 50px;
+  }
+
+  &__item {
+    @include grids-item(1, 30px);
+    @media screen and (min-width: 768px) {
+      @include grids-item(2, 30px);
     }
-
-    &__text {
-        @extend %description-style;
-       margin: 0 auto 64px;
-        max-width: 730px;
-        
+    @media screen and (min-width: 1200px) {
+      @include grids-item(4, 30px);
     }
-
-    &__button {
-        @extend %button-style;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    &__list {
-        @include grids-list(30px);
-        margin-bottom: 50px;
-    }
-
-    &__item {
-        @include grids-item(4, 30px);
-
-    }
-
+  }
 }
