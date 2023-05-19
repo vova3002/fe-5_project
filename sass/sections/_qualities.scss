@@ -12,7 +12,7 @@
         @media screen and (min-width:768px) {
             font-size: 36px;
         }
-        max-width: 739px;
+
     }
 
     &__text {
@@ -37,11 +37,16 @@
 
     &__list {
         @include grids-list($gap: 27px);
+        flex-wrap: wrap;
     }
 
     &__item {
-        @include grids-item($items: 3, $gap: 27px);
-        display: flex;
+        // @include grids-item(3, 27px);
+            width: calc((100% - (1 * 27px)) / 1);
+            display: flex;
+        @media screen and (min-width:768px) {
+            width: calc((100% - (3 * 27px)) / 3);
+        }
     }
 
     &__icon {

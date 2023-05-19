@@ -10,8 +10,12 @@
         color: $main-text-color;
     }
     &__img {
+        margin-top: 40px;
         width: 400px;
         height: 300px;
+        @media screen and (min-width:768px) {
+            margin-top: 0;
+        }
     }
     &__list {
         @include grids-list(100px);
@@ -50,6 +54,7 @@
     }
     &__description {
         margin: 60px 0 42px 0;
+        @extend %subtext-style;
     }
     &__svg {
         fill: #4985FF;
