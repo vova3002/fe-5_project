@@ -40,6 +40,10 @@
     line-height: 1.25;
     color: $accent-color;
     position: relative;
+    transition: 500ms color cubic-bezier(0.165, 0.84, 0.44, 1) 250ms;
+    &:hover {
+        color: black;
+    }
 }
 
 .header__active::before{

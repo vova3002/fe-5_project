@@ -41,6 +41,14 @@
         margin-left: auto;
         margin-right: auto;
         margin-top: 50px;
+        cursor: pointer;
+        transition: 500ms background-color cubic-bezier(0.165, 0.84, 0.44, 1) 250ms,
+        500ms color cubic-bezier(0.165, 0.84, 0.44, 1) 250ms;
+        &:hover {
+            background-color: #FFFFFF;
+            color: $text-color;
+            box-shadow: black;
+        }
     }
 
 }
