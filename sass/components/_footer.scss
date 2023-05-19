@@ -4,20 +4,39 @@
     background: #F6F6F8;
 
     &__footer {
-        @extend %subtitle-style
+        @extend %subtitle-style;
     }
 
-    &__contact:not(:last-child) {
-        margin-bottom: 30px;
+    &__contacts{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media screen and (min-width:768px) {
+            display: block;
+        }
+    }
+
+
+    &__contact {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        &:not(:last-child){
+            margin-bottom: 30px;
+        }
     }
 
     &__title {
         margin-bottom: 35px;
+        text-align: center;
+        @media screen and (min-width:768px) {
+            text-align: left;
+        }
     }
 
 
     &__link {
-        @extend %subtext-style
+        @extend %subtext-style;
     }
 
     &__list {
@@ -38,8 +57,13 @@
 
 
     &__item {
-        @include grids-item(4, 30px);
-
+        @include grids-item(1, 30px);
+        @media screen and (min-width:768px){
+            @include grids-item(2, 30px);
+        }
+        @media screen and (min-width:1200px){
+            @include grids-item(4, 30px);
+        }
     }
 
     &__icon {
