@@ -6,6 +6,7 @@
     &__title {
         @include section-title($accent-color);
         text-align: left;
+
     }
 
     &__name {
@@ -18,22 +19,32 @@
         @extend %description-style;
         text-align: left;
         margin-bottom: 47px;
-        
+
     }
 
     &__button {
         @extend %button-style;
-        margin-left: 370px;
+        margin-left: auto;
+        margin-top: 55px;
+
+        @media screen and (min-width:768px) {
+            margin-top: 0px;
+        }
     }
 
     &__list {
         @include grids-list(30px);
-        display: flex
+        display: flex;
+
     }
 
     &__item {
-        @include grids-item(3, 30px);
-        
+        @include grids-item(1, 30px);
+
+        @media screen and (min-width:768px) {
+            @include grids-item(3, 30px);
+        }
+
     }
 
     &__link {
@@ -47,11 +58,15 @@
     }
 
     &__box {
-        display: flex;
+
         padding-top: 100px;
         margin-bottom: 70px;
         justify-content: center;
         align-items: center;
+
+        @media screen and (min-width:768px) {
+            display: flex;
+        }
     }
 
     &__line {
@@ -62,6 +77,6 @@
 
     &__img {
         overflow: hidden;
-        border-radius: 10px;
+        border-radius: 25px;
     }
 }
